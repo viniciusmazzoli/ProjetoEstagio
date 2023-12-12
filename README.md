@@ -20,7 +20,7 @@ Imóveis em Destaque: Exibição de imóveis em destaque em um layout responsivo
 
 Quem Somos: Seção informativa sobre a empresa, destacando características e missão.
 
-Contato: Formulário de contato para os usuários enviarem mensagens para a empresa. Detalhes de contato também são fornecidos.
+Contato: Formulário de contato para os usuários enviarem mensagens para a empresa.
 
 Como Executar o Projeto Localmente
 Pré-requisitos:
@@ -31,7 +31,7 @@ Clonar o Repositório:
 
 bash
 Copy code
-git clone https://github.com/seu-usuario/LocacaoImoveis.git
+git clone https://github.com/viniciusmazzoli/ProjetoEstagio.git
 Instalar Dependências:
 
 bash
