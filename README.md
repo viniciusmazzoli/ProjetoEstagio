@@ -1,5 +1,5 @@
 Documentação do Projeto - Locação de Imóveis
-Este documento fornece uma visão geral do projeto "Locação de Imóveis" desenvolvido com o Angular CLI. O projeto é uma aplicação web para a exibição e locação de imóveis, proporcionando uma experiência amigável e informativa para os usuários.
+Este documento fornece uma visão geral do projeto "Locação de Imóveis" desenvolvido com o Angular CLI.
 
 Tecnologias Utilizadas
 Angular CLI (v17.0.6): O Angular CLI foi utilizado para a geração e gerenciamento da estrutura do projeto.
@@ -49,6 +49,5 @@ Contato
 Email: viniciusmazzoli2005@gmail.com
 Telefone: (31) 98495-6969
 Observações
-O projeto utiliza dados e imagens fictícias para ilustrar o design e as funcionalidades.
 
 Nunca tinha usado antes as linguagens pedidas na atividade por isso o projeto ficou bastante raso.
