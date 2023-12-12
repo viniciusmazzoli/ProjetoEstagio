@@ -51,4 +51,4 @@ Telefone: (31) 98495-6969
 Observações
 O projeto utiliza dados e imagens fictícias para ilustrar o design e as funcionalidades.
 
-Este é um projeto de exemplo e pode ser adaptado e expandido conforme as necessidades do desenvolvedor.
+Nunca tinha usado antes as linguagens pedidas na atividade por isso o projeto ficou bastante raso.
