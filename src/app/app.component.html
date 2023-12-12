@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Locação de Imóveis</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #343a40;
+      color: white;
+      padding: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    .Aclass a {
+      color: white;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+
+
+
+    .property-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin: 20px;
+      padding: 20px;
+      background-color: white;
+    }
+
+    .property-card img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    footer {
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .highlight-section {
+      text-align: center;
+      padding: 50px 0;
+      background-color: #f1f1f1;
+    }
+
+    .highlight-section h2 {
+      margin-bottom: 20px;
+    }
+
+    .row {
+      text-align: center;
+    }
+
+
+    .quem-somos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    background-color: #f8f9fa;
+  }
+
+  .quem-somos-texto,
+  .quem-somos-topicos {
+    width: 45%;
+  }
+
+  .quem-somos h2 {
+    color: #343a40;
+  }
+
+  .quem-somos p,
+  .quem-somos-topicos ul {
+    color: #6c757d;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .quem-somos-topicos li {
+    margin-bottom: 10px;
+  }
+
+  .quem-somos-topicos strong {
+    color: #343a40;
+  }
+  .contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+.contact-left p svg{
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons a{
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+
+    transform: translateY(-5px);
+}
+
+.btn.btn2{
+    display: inline-block;
+    background: blue;
+    color: white;
+}
+
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+    color: white;
+}
+@media only screen and (max-width:600px){
+  .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 13px;
+    }
+}
+</style>
+</head>
+
+<body>
+  <header>
+    <h1>Locação de Imóveis</h1>
+    <div class="Aclass">
+      <a href="#">Inicio | </a>
+      <a href="#">Contato | </a>
+      <a href="#QuemSomos">Quem somos</a>
+    </div>
+  </header>
+
+  <main>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100"
+            src="https://portaldeamericana.com/wp-content/uploads/2023/03/open-mall-shopping-americana-1-800x400.jpg"
+            alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100"
+            src="https://portaldeamericana.com/wp-content/uploads/2023/04/novo-hotel-americana-800x400.jpg"
+            alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100"
+            src="http://nerypontualcondominios.com.br/assets/12-Reformar-fachada-de-predio-1000x480-1.jpg"
+            alt="Third slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div class="row">
+      <h2>Imóveis em Destaque</h2>
+      <div class="col-md-4">
+        <div class="property-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUAckfLlOsmWcgju52ohTAbOZpPeSRtIsJMg&usqp=CAU"
+            alt="Imóvel 1">
+          <h3>Casa Elegante</h3>
+          <p>Encantadora casa com design contemporâneo e espaços amplos. Localizada em um bairro tranquilo, esta
+            propriedade oferece conforto e estilo.</p>
+            <button class="btn btn-primary">Ver Detalhes</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="property-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcfnbWgnTpUzRqNiBAklkLRrAnVtknRp4xsA&usqp=CAU"
+            alt="Imóvel 2">
+          <h3>Apartamento Moderno</h3>
+          <p>Elegante apartamento urbano com vista panorâmica da cidade. Possui comodidades modernas e está
+            convenientemente localizado perto de lojas e restaurantes.</p>
+          <button class="btn btn-primary">Ver Detalhes</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="property-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3Jtu9Tx3st7dk8x_EcWewUJCzZFjjNzYRmA&usqp=CAU"
+            alt="Imóvel 3">
+          <h3>Cobertura de Luxo</h3>
+          <p>Desfrute do luxo nesta cobertura exclusiva. Oferece vistas deslumbrantes, áreas de entretenimento ao ar
+            livre e acabamentos de alta qualidade.</p>
+          <button class="btn btn-primary">Ver Detalhes</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="property-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIKPrx8o24eSIDVkApbVnIrKdzM2teZRnV_w&usqp=CAU"
+            alt="Imóvel 1">
+          <h3>Casa Elegante</h3>
+          <p>Encantadora casa com design contemporâneo e espaços amplos. Localizada em um bairro tranquilo, esta
+            propriedade oferece conforto e estilo.</p>
+          <button class="btn btn-primary">Ver Detalhes</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="property-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsOsTobm10wRy84vvt_LWlCBgXpWN3WWiLeA&usqp=CAU"
+            alt="Imóvel 2">
+          <h3>Apartamento Moderno</h3>
+          <p>Elegante apartamento urbano com vista panorâmica da cidade. Possui comodidades modernas e está
+            convenientemente localizado perto de lojas e restaurantes.</p>
+          <button class="btn btn-primary">Ver Detalhes</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="property-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHFBqOMswD1plbCAdOP3f6GmccO7wFofiG-w&usqp=CAU"
+            alt="Imóvel 3">
+          <h3>Cobertura de Luxo</h3>
+          <p>Desfrute do luxo nesta cobertura exclusiva. Oferece vistas deslumbrantes, áreas de entretenimento ao ar
+            livre e acabamentos de alta qualidade.</p>
+          <button class="btn btn-primary">Ver Detalhes</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="property-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLfJ8z8MwhriGsYbMRbDLIWgCgQKMN-83rSA&usqp=CAU"
+            alt="Imóvel 1">
+          <h3>Casa Elegante</h3>
+          <p>Encantadora casa com design contemporâneo e espaços amplos. Localizada em um bairro tranquilo, esta
+            propriedade oferece conforto e estilo.</p>
+          <button class="btn btn-primary">Ver Detalhes</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="property-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsuT5PUhnVYo8qc1QSdBPckermKXH3CFMUbg&usqp=CAU"
+            alt="Imóvel 2">
+          <h3>Apartamento Moderno</h3>
+          <p>Elegante apartamento urbano com vista panorâmica da cidade. Possui comodidades modernas e está
+            convenientemente localizado perto de lojas e restaurantes.</p>
+          <button class="btn btn-primary">Ver Detalhes</button>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="property-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvqdbuwZXjmucIez8xyWCYpY9uimdd6jN1FA&usqp=CAU"
+            alt="Imóvel 3">
+          <h3>Cobertura de Luxo</h3>
+          <p>Desfrute do luxo nesta cobertura exclusiva. Oferece vistas deslumbrantes, áreas de entretenimento ao ar
+            livre e acabamentos de alta qualidade.</p>
+          <button class="btn btn-primary">Ver Detalhes</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="quem-somos" id="QuemSomos">
+      <div class="quem-somos-texto">
+        <h2>Quem Somos?</h2>
+        <p>Somos uma empresa dedicada a fornecer as melhores opções de locação de imóveis, unindo qualidade e conforto para atender às suas necessidades. Nossa missão é tornar a busca por um novo lar uma experiência agradável e satisfatória.</p>
+      </div>
+      <div class="quem-somos-topicos">
+        <h2>Características</h2>
+        <ul>
+          <li><strong>Compromisso com a Qualidade:</strong> Buscamos constantemente a excelência em nossos serviços.</li>
+          <li><strong>Transparência e Integridade:</strong> Pautamos nossas ações pela transparência e integridade.</li>
+          <li><strong>Inovação Contínua:</strong> Investimos em soluções inovadoras para proporcionar uma experiência moderna.</li>
+          <li><strong>Atendimento Personalizado:</strong> Valorizamos cada cliente e oferecemos um atendimento personalizado.</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  
+  <div id="contato">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Fale Conosco:</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> viniciusmazzoli2005gmail.com</p>                
+                <p><i class="fa-solid fa-phone"></i> (31) 98495-6969</p>
+                
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Seu nome" required>
+                    <input type="email" name="Email" placeholder="Seu email" required>
+                    <textarea name="Message" rows="6" placeholder="Sua mensagem"></textarea>
+                    <button type="submit" class="btn btn2">Enviar</button>
+                </form>
+               
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2023 Vinicius. Todos os direitos reservados.</p>
+    </div>
+  </div>
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
